@@ -23,7 +23,7 @@ interface TrainModelTabProps {
   setTaskId: (taskId: string | null) => void;
 }
 
-const TrainModelTab: React.FC<TrainModelTabProps> = ({ taskId, setTaskId }) => {
+const TrainModelTab: React.FC<TrainModelTabProps>  = ({ taskId, setTaskId }) => {
   const [samples, setSamples] = useState<VoiceSample[]>([]);
   const [stats, setStats] = useState<VoiceSampleStats | null>(null);
   const [isLoading, setIsLoading] = useState(true);

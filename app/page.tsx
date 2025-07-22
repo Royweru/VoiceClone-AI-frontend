@@ -9,7 +9,7 @@ import Link from "next/link";
 export default function Home() {
   const [activeTab, setActiveTab] = useState<"train" | "sts" | "tts">("tts");
   const { user, logout,loading} = useAuth();
-  const [taskId, setTaskId] = useState(null);
+  const [taskId, setTaskId] = useState<string|null>(null);
   const [audioUrl, setAudioUrl] = useState("");
   const [convertedText, setConvertedText] = useState("");
   const recorderRef = useRef(null);
